@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" role="img" aria-label="Mastercard Foundation">
+  <rect width="200" height="48" fill="none"/>
+  <circle cx="14" cy="24" r="10" fill="#EB001B"/>
+  <circle cx="26" cy="24" r="10" fill="#F79E1B" opacity="0.95"/>
+  <text x="44" y="22" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#1a1a1a">MASTERCARD</text>
+  <text x="44" y="36" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#1a1a1a">FOUNDATION</text>
+</svg>
