@@ -14,17 +14,25 @@
       </span>
     </div>
     <div class="gsr-card-detail" hidden>
-      <h4>Crisis</h4>
-      <p>Our unique approach to crisis management starts by putting in place strategic reservoirs of goodwill, helping you do more than survive, but thrive. This is part of our cutting-edge counter-crisis communications strategies that</p>
-      <h4>Thought Leadership</h4>
-      <p>Influence, these days can't be bought, it has to be earned. It requires taking a stand and elevating your values and vision beyond the company. We help you to understand the terrain and to identify the most advantageous ways to engage. We focus on impact over impressions.</p>
-      <h4>Global</h4>
-      <p>Our unique ability to prominently position clients in foreign markets has generated them hundreds of millions in new revenue.</p>
+      <div class="gsr-modal-top">
+        <div class="gsr-modal-intro">
+          <p>Our unique approach to crisis management starts by putting in place strategic reservoirs of goodwill, helping you do more than survive, but thrive.</p>
+          <div class="gsr-modal-ctas">
+            <a class="gsr-learn-more" href="https://www.globalsitroom.com/our-services">Learn More</a>
+          </div>
+        </div>
+        <ul class="gsr-modal-checklist">
+          <li>Cutting-edge counter-crisis communications strategy</li>
+          <li>Elevate thought leadership and take a stand beyond the company</li>
+          <li>Identify the most advantageous ways to engage across markets</li>
+          <li>Prominently position clients in new markets</li>
+        </ul>
+      </div>
+      <div class="gsr-modal-media"></div>
       <blockquote class="gsr-quote">
         <p>Replace this with a real client quote about your public affairs work.</p>
         Client Name<span>Title, Company</span>
       </blockquote>
-      <a class="gsr-learn-more" href="https://www.globalsitroom.com/our-services">Learn More</a>
     </div>
   </article>
 
@@ -42,12 +50,25 @@
       </span>
     </div>
     <div class="gsr-card-detail" hidden>
-      <p>The Reputation Risk Index&trade; is a quarterly barometer of emerging and evolving reputational threats to companies and organizations. The Index combines data from the Global Situation Room's team of crisis experts and analysis from more than 130 preeminent public affairs leaders, from former heads of state and ministers to current CEOs and senior executives who serve on the Global Risk Advisory Council&trade;.</p>
+      <div class="gsr-modal-top">
+        <div class="gsr-modal-intro">
+          <p>The Reputation Risk Index&trade; is a quarterly barometer of emerging and evolving reputational threats to companies and organizations.</p>
+          <div class="gsr-modal-ctas">
+            <a class="gsr-learn-more" href="https://www.globalsitroom.com/reputational-risk-index">Learn More</a>
+          </div>
+        </div>
+        <ul class="gsr-modal-checklist">
+          <li>Combines data from GSR's team of crisis experts</li>
+          <li>Informed by 130+ preeminent public affairs leaders</li>
+          <li>From former heads of state and ministers to sitting CEOs</li>
+          <li>Backed by the Global Risk Advisory Council&trade;</li>
+        </ul>
+      </div>
+      <div class="gsr-modal-media"></div>
       <blockquote class="gsr-quote">
         <p>Replace this with a real client quote about the Index.</p>
         Client Name<span>Title, Company</span>
       </blockquote>
-      <a class="gsr-learn-more" href="https://www.globalsitroom.com/reputational-risk-index">Learn More</a>
     </div>
   </article>
 
@@ -65,15 +86,24 @@
       </span>
     </div>
     <div class="gsr-card-detail" hidden>
-      <h4>We Deliver Powerful Podcasts that Drive the Debate</h4>
-      <p><strong>Unrivaled Access to Global Leaders.</strong> Securing the most powerful people on the planet.</p>
-      <p><strong>Making News.</strong> A PR News Top 100 agency to secure headlines.</p>
-      <p><strong>International Impact.</strong> Chart-topping shows in every major market around the world.</p>
+      <div class="gsr-modal-top">
+        <div class="gsr-modal-intro">
+          <p>We deliver powerful podcasts that drive the debate, built for reach and built to make headlines.</p>
+          <div class="gsr-modal-ctas">
+            <a class="gsr-learn-more" href="https://www.globalsitroom.com/podcast-production">Learn More</a>
+          </div>
+        </div>
+        <ul class="gsr-modal-checklist">
+          <li>Unrivaled access to global leaders</li>
+          <li>A PR News Top 100 agency securing headlines</li>
+          <li>Chart-topping shows in every major market</li>
+        </ul>
+      </div>
+      <div class="gsr-modal-media"></div>
       <blockquote class="gsr-quote">
         <p>Replace this with a real client quote about your podcast work.</p>
         Client Name<span>Title, Company</span>
       </blockquote>
-      <a class="gsr-learn-more" href="https://www.globalsitroom.com/podcast-production">Learn More</a>
     </div>
   </article>
 </div>
@@ -95,12 +125,11 @@
 </div>
 
 <style>
-  /* Inherit the page's font so it matches your Squarespace theme automatically */
+  /* Proxima Nova if the page (Code Block / Squarespace) already loads it; sensible fallbacks otherwise */
   .gsr-cards, .gsr-card, .gsr-card-title, .gsr-expand,
   .gsr-modal, .gsr-modal-box, .gsr-modal-title, .gsr-modal-body,
-  .gsr-learn-more, .gsr-quote, .gsr-quote p, .gsr-quote cite,
-  .gsr-modal-body h4, .gsr-modal-body p {
-    font-family: inherit;
+  .gsr-modal-checklist, .gsr-learn-more, .gsr-quote {
+    font-family: 'proxima-nova', 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
   }
 
   .gsr-cards {
@@ -196,7 +225,7 @@
   .gsr-modal-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);   /* neutral dim, no blue cast */
+    background: rgba(0, 0, 0, 0.45);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     animation: gsr-fade 0.2s ease;
@@ -205,12 +234,12 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 560px;
-    max-height: 82vh;
+    max-width: 660px;
+    max-height: 84vh;
     overflow-y: auto;
     background: #ffffff;
     border-radius: 18px;
-    padding: 32px 34px 30px;
+    padding: 36px 38px 34px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
     animation: gsr-pop 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -237,9 +266,29 @@
     box-shadow: inset 0 0 0 1.5px #ffffff;
   }
   .gsr-modal-close svg { width: 17px; height: 17px; }
+  .gsr-modal-title {
+    margin: 0 0 22px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #1a1a2e;
+    letter-spacing: -0.01em;
+    max-width: 90%;
+  }
+  .gsr-modal-body { font-size: 17px; line-height: 1.7; color: #45455a; }
+
+  /* Two-column header: copy + CTA on the left, checklist on the right */
+  .gsr-modal-top {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .gsr-modal-intro { flex: 1 1 260px; }
+  .gsr-modal-intro p { margin: 0 0 20px; }
+  .gsr-modal-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .gsr-learn-more {
     display: inline-block;
-    margin-top: 10px;
     padding: 13px 26px;
     background: #021B55;
     color: #ffffff;
@@ -250,44 +299,73 @@
     transition: background 0.2s ease;
   }
   .gsr-learn-more:hover { background: #0A2B72; }
-  .gsr-modal-title {
-    margin: 0 0 18px;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 1.15;
-    color: #1a1a2e;
-    letter-spacing: -0.01em;
-    max-width: 90%;
-  }
-  .gsr-modal-body {
-    font-size: 17px;
-    line-height: 1.75;
-    color: #45455a;
-  }
-  .gsr-modal-body p { margin: 0 0 22px; }
-  .gsr-modal-body h4 {
-    margin: 32px 0 10px;
-    font-size: 16px;
-    font-weight: 700;
+  .gsr-learn-more--ghost {
+    background: transparent;
     color: #021B55;
-    letter-spacing: -0.005em;
+    border: 1.5px solid #021B55;
   }
-  .gsr-modal-body h4:first-child { margin-top: 0; }
-  .gsr-modal-photo {
+  .gsr-learn-more--ghost:hover { background: #021B55; color: #ffffff; }
+
+  .gsr-modal-checklist {
+    flex: 1 1 220px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .gsr-modal-checklist li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #33334a;
+  }
+  .gsr-modal-checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FFEDE3;
+  }
+  .gsr-modal-checklist li::after {
+    content: '\2713';
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #FF5F30;
+  }
+
+  /* Media panel: card photo shown in a soft grey frame, like the mock-UI panel in the reference */
+  .gsr-modal-media {
+    background: #F5F6FA;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .gsr-modal-media img {
     width: 100%;
-    height: 210px;
+    max-height: 260px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 26px;
+    border-radius: 10px;
     display: block;
   }
+
+  /* Quote styled as a proof panel, matching the stat/fraud boxes in the reference */
   .gsr-quote {
-    border-left: 3px solid #021B55;
-    padding: 2px 0 2px 20px;
-    margin: 30px 0;
+    background: #F5F6FA;
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin: 0;
   }
   .gsr-quote p {
-    font-size: 17.5px;
+    font-size: 18px;
     line-height: 1.6;
     color: #1a1a2e;
     margin: 0 0 12px;
@@ -316,7 +394,7 @@
     .gsr-card { max-width: 320px; width: 100%; aspect-ratio: 3 / 4; }
     .gsr-modal-box { padding: 28px 22px 24px; }
     .gsr-modal-title { font-size: 22px; }
-    .gsr-modal-photo { height: 170px; }
+    .gsr-modal-top { flex-direction: column; gap: 20px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .gsr-card, .gsr-modal-backdrop, .gsr-modal-box { animation: none; transition: none; }
@@ -339,9 +417,11 @@
       titleClone.querySelectorAll('br').forEach(function (br) { br.replaceWith(' '); });
       mTitle.textContent = titleClone.textContent.replace(/\s+/g, ' ').trim();
 
-      var photo = card.querySelector('.gsr-card-photo img');
-      mBody.innerHTML = (photo ? '<img class="gsr-modal-photo" src="' + photo.src + '" alt="">' : '')
-                      + card.querySelector('.gsr-card-detail').innerHTML;
+      mBody.innerHTML = card.querySelector('.gsr-card-detail').innerHTML;
+
+      var photoSrc = card.querySelector('.gsr-card-photo img').src;
+      var mediaSlot = mBody.querySelector('.gsr-modal-media');
+      if (mediaSlot) mediaSlot.innerHTML = '<img src="' + photoSrc + '" alt="">';
 
       modal.classList.add('gsr-open');
       modal.setAttribute('aria-hidden', 'false');
