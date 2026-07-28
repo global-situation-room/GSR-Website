@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSR Client Coverage Embed Helper</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    id="coverage-frame"
+    src="./index.html"
+    title="Global Situation Room Client Coverage"
+    scrolling="no"
+  ></iframe>
+
+  <script>
+    const frame = document.getElementById("coverage-frame");
+
+    window.addEventListener("message", (event) => {
+      if (!event.data || event.data.type !== "gsr-coverage-resize") return;
+      frame.style.height = `${event.data.height}px`;
+    });
+  </script>
+</body>
+</html>
