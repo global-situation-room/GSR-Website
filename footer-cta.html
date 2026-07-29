@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Footer CTA</title></head><body style="background:#fff;padding:40px 20px;">
+<div class="gsr-footer-cta">
+  <div class="gsr-footer-cta-photo"></div>
+  <div class="gsr-footer-cta-content">
+    <h2 class="gsr-footer-cta-heading">Stay connected with GSR</h2>
+    <div class="gsr-footer-cta-actions">
+      <a class="gsr-footer-btn gsr-footer-btn--primary" href="https://www.globalsitroom.com/contact">
+        Learn More &amp; Connect With Our Team
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <form class="gsr-footer-subscribe" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <button type="submit">
+          Subscribe
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+  .gsr-footer-cta, .gsr-footer-cta-heading, .gsr-footer-btn, .gsr-footer-subscribe input, .gsr-footer-subscribe button {
+    font-family: 'proxima-nova', 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .gsr-footer-cta {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #021B55 0%, #0A2B72 100%);
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Optional background photo layer — swap PASTE_PHOTO_HERE for a hosted image URL if you want one */
+  .gsr-footer-cta-photo {
+    position: absolute;
+    inset: 0;
+    background: url('PASTE_PHOTO_HERE') center/cover no-repeat;
+    opacity: 0.35;
+    z-index: 0;
+  }
+
+  .gsr-footer-cta-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 56px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .gsr-footer-cta-heading {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    max-width: 420px;
+  }
+
+  .gsr-footer-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .gsr-footer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 26px;
+    background: #ffffff;
+    color: #021B55;
+    font-size: 15.5px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .gsr-footer-btn svg { width: 16px; height: 16px; }
+  .gsr-footer-btn:hover {
+    background: #EAF0FF;
+    transform: translateY(-2px);
+  }
+
+  .gsr-footer-subscribe {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 6px;
+    gap: 6px;
+  }
+  .gsr-footer-subscribe input {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 16px;
+    min-width: 180px;
+    outline: none;
+  }
+  .gsr-footer-subscribe input::placeholder { color: rgba(255, 255, 255, 0.65); }
+  .gsr-footer-subscribe button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background: #6EE787;
+    color: #021B55;
+    font-size: 14.5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .gsr-footer-subscribe button svg { width: 15px; height: 15px; }
+  .gsr-footer-subscribe button:hover {
+    background: #8CF29E;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 720px) {
+    .gsr-footer-cta-content { padding: 40px 24px; flex-direction: column; align-items: flex-start; }
+    .gsr-footer-cta-heading { font-size: 24px; max-width: 100%; }
+    .gsr-footer-cta-actions { flex-direction: column; align-items: stretch; width: 100%; }
+    .gsr-footer-btn, .gsr-footer-subscribe { justify-content: center; }
+    .gsr-footer-subscribe input { min-width: 0; flex: 1; }
+  }
+</style>
+</body></html>
