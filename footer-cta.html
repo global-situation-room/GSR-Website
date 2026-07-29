@@ -2,7 +2,8 @@
 <div class="gsr-footer-cta">
   <div class="gsr-footer-cta-photo"></div>
   <div class="gsr-footer-cta-content">
-    <h2 class="gsr-footer-cta-heading">Stay connected with GSR</h2>
+    <h2 class="gsr-footer-cta-heading">Stay connected with Global Situation Room</h2>
+
     <div class="gsr-footer-cta-actions">
       <a class="gsr-footer-btn gsr-footer-btn--primary" href="https://www.globalsitroom.com/contact">
         Learn More &amp; Connect With Our Team
@@ -38,9 +39,6 @@
     border-radius: 28px;
     overflow: hidden;
     background: linear-gradient(160deg, #021B55 0%, #0A2B72 100%);
-    min-height: 260px;
-    display: flex;
-    align-items: center;
   }
 
   .gsr-footer-cta-photo {
@@ -55,29 +53,27 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: 56px 48px;
+    padding: 48px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .gsr-footer-cta-heading {
-    margin: 0;
+    margin: 0 0 36px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -0.01em;
-    max-width: 380px;
   }
 
   .gsr-footer-cta-actions {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 48px;
+    gap: 24px;
+    width: 100%;
   }
 
   .gsr-footer-btn {
@@ -93,7 +89,6 @@
     border-radius: 999px;
     white-space: nowrap;
     transition: background 0.2s ease, transform 0.2s ease;
-    margin-top: 4px;
   }
   .gsr-footer-btn svg { width: 16px; height: 16px; }
   .gsr-footer-btn:hover {
@@ -102,7 +97,12 @@
   }
 
   .gsr-footer-subscribe-block {
-    max-width: 300px;
+    max-width: 380px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    padding: 22px 24px;
   }
 
   .gsr-footer-subscribe-heading {
@@ -114,7 +114,7 @@
   }
 
   .gsr-footer-subscribe-subtext {
-    margin: 0 0 14px;
+    margin: 0 0 16px;
     color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
     line-height: 1.5;
@@ -129,7 +129,6 @@
     padding: 5px;
     gap: 0;
     width: 100%;
-    min-width: 340px;
   }
   .gsr-footer-subscribe input {
     border: none;
@@ -158,13 +157,15 @@
     flex: 0 0 auto;
     transition: background 0.2s ease, transform 0.2s ease;
   }
+  .gsr-footer-subscribe button:hover {
+    background: #EAF0FF;
+    transform: translateY(-2px);
+  }
 
   @media (max-width: 720px) {
-    .gsr-footer-cta-content { padding: 40px 24px; flex-direction: column; align-items: flex-start; }
-    .gsr-footer-cta-heading { font-size: 24px; max-width: 100%; }
-    .gsr-footer-cta-actions { flex-direction: column; align-items: stretch; width: 100%; gap: 28px; }
+    .gsr-footer-cta-content { padding: 36px 24px; }
+    .gsr-footer-cta-heading { font-size: 24px; }
     .gsr-footer-subscribe-block { max-width: 100%; }
-    .gsr-footer-subscribe input { min-width: 0; }
   }
 </style>
 </body></html>
