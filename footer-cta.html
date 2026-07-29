@@ -168,4 +168,15 @@
     .gsr-footer-subscribe-block { max-width: 100%; }
   }
 </style>
+<script>
+  function notifyParentHeight() {
+    var height = document.documentElement.scrollHeight;
+    window.parent.postMessage({ type: "gsr-footer-resize", height: height }, "*");
+  }
+  window.addEventListener("load", notifyParentHeight);
+  window.addEventListener("resize", notifyParentHeight);
+  if ("ResizeObserver" in window) {
+    new ResizeObserver(notifyParentHeight).observe(document.body);
+  }
+</script>
 </body></html>
