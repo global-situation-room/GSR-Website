@@ -19,14 +19,10 @@
           <p>We work with our clients to develop, elevate and defend their authentic story. We thoroughly research the current positioning of clients&rsquo;
             brands, the context in which they are communicating, and potential problems that could arise. Often, we are not our best spokespeople and
             part of our process is to find partners and validators that can help to amplify your messaging. We help your story to break through the noise.</p>
-          <div class="gsr-modal-ctas">
-            <a class="gsr-learn-more" href="https://www.globalsitroom.com/our-services">Learn More</a>
-          </div>
         </div>
-        <blockquote class="gsr-quote">
-          <p>Replace this with a real client quote about your public affairs work.</p>
-          Client Name<span>Title, Company</span>
-        </blockquote>
+        <div class="gsr-modal-cta-side">
+          <a class="gsr-learn-more" href="https://www.globalsitroom.com/our-services">Learn More</a>
+        </div>
       </div>
       <div class="gsr-modal-columns">
         <div class="gsr-modal-column">
@@ -42,7 +38,10 @@
           <p>Our unique ability to prominently position clients in foreign markets has generated them hundreds of millions in new revenue.</p>
         </div>
       </div>
-      <div class="gsr-modal-media gsr-modal-media--right"></div>
+      <blockquote class="gsr-quote">
+        <p>Replace this with a real client quote about your public affairs work.</p>
+        Client Name<span>Title, Company</span>
+      </blockquote>
     </div>
   </article>
 
@@ -63,14 +62,10 @@
       <div class="gsr-modal-top">
         <div class="gsr-modal-intro">
           <p>The Reputation Risk Index&trade; is a quarterly barometer of emerging and evolving reputational threats to companies and organizations.</p>
-          <div class="gsr-modal-ctas">
-            <a class="gsr-learn-more" href="https://www.globalsitroom.com/reputational-risk-index">Learn More</a>
-          </div>
         </div>
-        <blockquote class="gsr-quote">
-          <p>&ldquo;Major international disruptions are an immediate, high-impact global crisis creating severe, cascading risks and shocks to global supply chains, global markets, and national security.&rdquo;</p>
-          Tyrik McKeiver<span>Adjunct Professor, Florida International University</span>
-        </blockquote>
+        <div class="gsr-modal-cta-side">
+          <a class="gsr-learn-more" href="https://www.globalsitroom.com/reputational-risk-index">Learn More</a>
+        </div>
       </div>
       <div class="gsr-modal-columns">
         <a class="gsr-modal-column" href="https://static1.squarespace.com/static/60b54d990f183412ca1b7428/t/6a6216b5c3edfb6b4280f7af/1784813237683/Reputation+Risk+Index+Q2+2026+%281%29.pdf" target="_blank" rel="noopener noreferrer">
@@ -86,7 +81,10 @@
           <p>Dive into our full archive of past Reputation Risk Index reports, quarter by quarter.</p>
         </a>
       </div>
-      <div class="gsr-modal-media"></div>
+      <blockquote class="gsr-quote">
+        <p>&ldquo;Major international disruptions are an immediate, high-impact global crisis creating severe, cascading risks and shocks to global supply chains, global markets, and national security.&rdquo;</p>
+        Tyrik McKeiver<span>Adjunct Professor, Florida International University</span>
+      </blockquote>
     </div>
   </article>
 
@@ -107,31 +105,29 @@
       <div class="gsr-modal-top">
         <div class="gsr-modal-intro">
           <p>We deliver powerful podcasts that drive the debate, built for reach and built to make headlines.</p>
-          <div class="gsr-modal-ctas">
-            <a class="gsr-learn-more" href="https://www.globalsitroom.com/podcast-production">Learn More</a>
-          </div>
         </div>
-        <blockquote class="gsr-quote">
-          <h4>Trusted By Global Institutions</h4>
-          <p>Situation Room Studios enjoys extraordinary relationships with some of the most prestigious places and programs on the planet.  
-            We build low-cost, mutually beneficial partnerships with them and our podcasts..</p>
-        </blockquote>
+        <div class="gsr-modal-cta-side">
+          <a class="gsr-learn-more" href="https://www.globalsitroom.com/podcast-production">Learn More</a>
+        </div>
       </div>
       <div class="gsr-modal-columns">
         <div class="gsr-modal-column">
-          <h4>Podcast Production</h4>
-          <p>Situation Room Studios uniquely creates podcasts that top the charts and drive global debates.</p>
+          <h4>COLUMN 1 TITLE</h4>
+          <p>Placeholder — tell me what this should say.</p>
         </div>
         <div class="gsr-modal-column">
-          <h4>Leadership</h4>
-          <p>Led by former Bloomberg producers with a proven record of creating world-class quality programs.</p>
+          <h4>COLUMN 2 TITLE</h4>
+          <p>Placeholder — tell me what this should say.</p>
         </div>
         <div class="gsr-modal-column">
-          <h4>Integrated Business Model</h4>
-          <p>A division of Global Situation Room, a PRNEWS Top 120 public affairs agency connecting clients with the world’s most influential individuals and institutions.</p>
+          <h4>COLUMN 3 TITLE</h4>
+          <p>Placeholder — tell me what this should say.</p>
         </div>
       </div>
-      <div class="gsr-modal-media"></div>
+      <blockquote class="gsr-quote">
+        <p>Replace this with a real client quote about your podcast work.</p>
+        Client Name<span>Title, Company</span>
+      </blockquote>
     </div>
   </article>
 </div>
@@ -300,15 +296,20 @@
   }
   .gsr-modal-body { font-size: 17.5px; line-height: 1.7; color: #45455a; }
 
+  /* Intro on the left, Learn More on the right */
   .gsr-modal-top {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
     margin-bottom: 32px;
   }
-  .gsr-modal-intro { flex: 1 1 280px; }
-  .gsr-modal-intro p { margin: 0 0 20px; }
-  .gsr-modal-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .gsr-modal-intro { flex: 1 1 auto; }
+  .gsr-modal-intro p { margin: 0; }
+  .gsr-modal-cta-side {
+    flex: 0 0 auto;
+    padding-top: 2px;
+  }
   .gsr-learn-more {
     display: inline-block;
     padding: 13px 26px;
@@ -318,63 +319,17 @@
     font-weight: 600;
     text-decoration: none;
     border-radius: 10px;
+    white-space: nowrap;
     transition: background 0.2s ease;
   }
   .gsr-learn-more:hover { background: #0A2B72; }
 
-  /* Photo panel — now placed at the bottom of the modal for every card */
-  .gsr-modal-media {
-    background: #F5F6FA;
-    border-radius: 14px;
-    padding: 20px;
-    margin-top: 28px;
-  }
-  .gsr-modal-media img {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    display: block;
-  }
-  /* Public Affairs Consulting photo — shift framing right so the people are visible */
-  .gsr-modal-media--right img {
-    object-position: right center;
-  }
-
-  .gsr-quote {
-    flex: 1 1 260px;
-    background: #F5F6FA;
-    border-radius: 14px;
-    padding: 24px 26px;
-    margin: 0;
-    align-self: flex-start;
-  }
-  .gsr-quote p {
-    font-size: 16.5px;
-    line-height: 1.55;
-    color: #1a1a2e;
-    margin: 0 0 12px;
-  }
-  .gsr-quote cite {
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 600;
-    color: #021B55;
-    display: block;
-  }
-  .gsr-quote cite span {
-    display: block;
-    font-weight: 400;
-    color: #6b6b80;
-    margin-top: 3px;
-  }
-
-  /* Bottom three-column section — light shaded boxes */
+  /* Three-column section */
   .gsr-modal-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-bottom: 28px;
   }
   .gsr-modal-column {
     display: block;
@@ -401,6 +356,33 @@
     color: #45455a;
   }
 
+  /* Quote — now a navy box at the bottom, matching the card/site color */
+  .gsr-quote {
+    background: linear-gradient(160deg, #021B55 0%, #0A2B72 100%);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin: 0;
+  }
+  .gsr-quote p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 14px;
+  }
+  .gsr-quote cite {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+  }
+  .gsr-quote cite span {
+    display: block;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 3px;
+  }
+
   @keyframes gsr-fade { from { opacity: 0; } to { opacity: 1; } }
   @keyframes gsr-pop {
     from { opacity: 0; transform: translateY(16px) scale(0.97); }
@@ -411,7 +393,7 @@
     .gsr-card { width: 100%; max-width: 360px; min-height: 460px; }
     .gsr-modal-box { padding: 28px 22px 24px; }
     .gsr-modal-title { font-size: 24px; }
-    .gsr-modal-top { flex-direction: column; gap: 20px; }
+    .gsr-modal-top { flex-direction: column; align-items: flex-start; gap: 16px; }
     .gsr-modal-columns { grid-template-columns: 1fr; gap: 16px; }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -436,10 +418,6 @@
       mTitle.textContent = titleClone.textContent.replace(/\s+/g, ' ').trim();
 
       mBody.innerHTML = card.querySelector('.gsr-card-detail').innerHTML;
-
-      var photoSrc = card.querySelector('.gsr-card-photo img').src;
-      var mediaSlot = mBody.querySelector('.gsr-modal-media');
-      if (mediaSlot) mediaSlot.innerHTML = '<img src="' + photoSrc + '" alt="">';
 
       modal.classList.add('gsr-open');
       modal.setAttribute('aria-hidden', 'false');
