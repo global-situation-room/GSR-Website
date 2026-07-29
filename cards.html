@@ -28,7 +28,6 @@
           Client Name<span>Title, Company</span>
         </blockquote>
       </div>
-      <div class="gsr-modal-media"></div>
       <div class="gsr-modal-columns">
         <div class="gsr-modal-column">
           <h4>Crisis</h4>
@@ -43,6 +42,7 @@
           <p>Our unique ability to prominently position clients in foreign markets has generated them hundreds of millions in new revenue.</p>
         </div>
       </div>
+      <div class="gsr-modal-media gsr-modal-media--right"></div>
     </div>
   </article>
 
@@ -68,25 +68,25 @@
           </div>
         </div>
         <blockquote class="gsr-quote">
-          <p>Replace this with a key finding or quoted insight pulled directly from the Index report.</p>
-          Reputation Risk Index&trade;<span>Q2 2026 Edition</span>
+          <p>&ldquo;Major international disruptions are an immediate, high-impact global crisis creating severe, cascading risks and shocks to global supply chains, global markets, and national security.&rdquo;</p>
+          Tyrik McKeiver<span>Adjunct Professor, Florida International University</span>
         </blockquote>
       </div>
-      <div class="gsr-modal-media"></div>
       <div class="gsr-modal-columns">
-        <div class="gsr-modal-column">
+        <a class="gsr-modal-column" href="https://static1.squarespace.com/static/60b54d990f183412ca1b7428/t/6a6216b5c3edfb6b4280f7af/1784813237683/Reputation+Risk+Index+Q2+2026+%281%29.pdf" target="_blank" rel="noopener noreferrer">
           <h4>Most Recent Report</h4>
-          <p>Where the Legal Sector&rsquo;s Brand Stands &mdash; our Q2 2026 report examines reputational risk across the legal industry. [Replace with real summary/link.]</p>
-        </div>
-        <div class="gsr-modal-column">
+          <p>Where the Legal Sector&rsquo;s Brand Stands &mdash; read the full Q2 2026 report.</p>
+        </a>
+        <a class="gsr-modal-column" href="https://www.youtube.com/watch?v=BZUSw7rLJEM" target="_blank" rel="noopener noreferrer">
           <h4>Webinar</h4>
-          <p>Join our upcoming session unpacking this quarter&rsquo;s findings with GSR&rsquo;s crisis experts. [Replace with date/registration link.]</p>
-        </div>
-        <div class="gsr-modal-column">
+          <p>Watch our experts unpack this quarter&rsquo;s findings and what they mean for your brand.</p>
+        </a>
+        <a class="gsr-modal-column" href="https://www.globalsitroom.com/past-reports" target="_blank" rel="noopener noreferrer">
           <h4>Report Library</h4>
-          <p>Dive into our full archive of past Reputation Risk Index reports, quarter by quarter. [Replace with link to archive.]</p>
-        </div>
+          <p>Dive into our full archive of past Reputation Risk Index reports, quarter by quarter.</p>
+        </a>
       </div>
+      <div class="gsr-modal-media"></div>
     </div>
   </article>
 
@@ -116,7 +116,6 @@
           Client Name<span>Title, Company</span>
         </blockquote>
       </div>
-      <div class="gsr-modal-media"></div>
       <div class="gsr-modal-columns">
         <div class="gsr-modal-column">
           <h4>COLUMN 1 TITLE</h4>
@@ -131,6 +130,7 @@
           <p>Placeholder — tell me what this should say.</p>
         </div>
       </div>
+      <div class="gsr-modal-media"></div>
     </div>
   </article>
 </div>
@@ -256,21 +256,21 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 720px;
-    max-height: 84vh;
+    max-width: 920px;
+    max-height: 88vh;
     overflow-y: auto;
     background: #ffffff;
-    border-radius: 18px;
-    padding: 36px 38px 34px;
+    border-radius: 20px;
+    padding: 44px 46px 42px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
     animation: gsr-pop 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .gsr-modal-close {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 36px;
-    height: 36px;
+    top: 18px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,25 +287,25 @@
     color: #ffffff;
     box-shadow: inset 0 0 0 1.5px #ffffff;
   }
-  .gsr-modal-close svg { width: 17px; height: 17px; }
+  .gsr-modal-close svg { width: 18px; height: 18px; }
   .gsr-modal-title {
-    margin: 0 0 22px;
-    font-size: 28px;
+    margin: 0 0 26px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.15;
     color: #1a1a2e;
     letter-spacing: -0.01em;
     max-width: 90%;
   }
-  .gsr-modal-body { font-size: 17px; line-height: 1.7; color: #45455a; }
+  .gsr-modal-body { font-size: 17.5px; line-height: 1.7; color: #45455a; }
 
   .gsr-modal-top {
     display: flex;
-    gap: 36px;
+    gap: 40px;
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
-  .gsr-modal-intro { flex: 1 1 260px; }
+  .gsr-modal-intro { flex: 1 1 280px; }
   .gsr-modal-intro p { margin: 0 0 20px; }
   .gsr-modal-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .gsr-learn-more {
@@ -321,23 +321,28 @@
   }
   .gsr-learn-more:hover { background: #0A2B72; }
 
+  /* Photo panel — now placed at the bottom of the modal for every card */
   .gsr-modal-media {
     background: #F5F6FA;
     border-radius: 14px;
     padding: 20px;
-    margin-bottom: 28px;
+    margin-top: 28px;
   }
   .gsr-modal-media img {
     width: 100%;
-    max-height: 260px;
+    max-height: 280px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     display: block;
   }
+  /* Public Affairs Consulting photo — shift framing right so the people are visible */
+  .gsr-modal-media--right img {
+    object-position: right center;
+  }
 
-  /* Quote — now used in the top-right column instead of the checklist */
   .gsr-quote {
-    flex: 1 1 240px;
+    flex: 1 1 260px;
     background: #F5F6FA;
     border-radius: 14px;
     padding: 24px 26px;
@@ -364,13 +369,22 @@
     margin-top: 3px;
   }
 
-  /* Bottom three-column section */
+  /* Bottom three-column section — light shaded boxes */
   .gsr-modal-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-    padding-top: 24px;
-    border-top: 1px solid #ECECF2;
+    gap: 20px;
+  }
+  .gsr-modal-column {
+    display: block;
+    background: #F5F6FA;
+    border-radius: 14px;
+    padding: 20px 22px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  a.gsr-modal-column:hover {
+    background: #EAECF5;
   }
   .gsr-modal-column h4 {
     margin: 0 0 8px;
@@ -395,9 +409,9 @@
     .gsr-cards { flex-direction: column; align-items: center; }
     .gsr-card { width: 100%; max-width: 360px; min-height: 460px; }
     .gsr-modal-box { padding: 28px 22px 24px; }
-    .gsr-modal-title { font-size: 22px; }
+    .gsr-modal-title { font-size: 24px; }
     .gsr-modal-top { flex-direction: column; gap: 20px; }
-    .gsr-modal-columns { grid-template-columns: 1fr; gap: 20px; }
+    .gsr-modal-columns { grid-template-columns: 1fr; gap: 16px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .gsr-card, .gsr-modal-backdrop, .gsr-modal-box { animation: none; transition: none; }
