@@ -8,19 +8,26 @@
         Learn More &amp; Connect With Our Team
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
-      <form class="gsr-footer-subscribe" action="#" method="post">
-        <input type="email" name="email" placeholder="Enter Email" required>
-        <button type="submit">
-          Subscribe
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </button>
-      </form>
+
+      <div class="gsr-footer-subscribe-block">
+        <p class="gsr-footer-subscribe-heading">Join Our Network</p>
+        <p class="gsr-footer-subscribe-subtext">Sign up with your email address to receive news and updates.</p>
+        <form class="gsr-footer-subscribe" action="#" method="post">
+          <input type="email" name="email" placeholder="Enter Email" required>
+          <button type="submit">
+            Subscribe
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  .gsr-footer-cta, .gsr-footer-cta-heading, .gsr-footer-btn, .gsr-footer-subscribe input, .gsr-footer-subscribe button {
+  .gsr-footer-cta, .gsr-footer-cta-heading, .gsr-footer-btn,
+  .gsr-footer-subscribe-heading, .gsr-footer-subscribe-subtext,
+  .gsr-footer-subscribe input, .gsr-footer-subscribe button {
     font-family: 'proxima-nova', 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
   }
 
@@ -36,7 +43,6 @@
     align-items: center;
   }
 
-  /* Optional background photo layer — swap PASTE_PHOTO_HERE for a hosted image URL if you want one */
   .gsr-footer-cta-photo {
     position: absolute;
     inset: 0;
@@ -64,14 +70,14 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -0.01em;
-    max-width: 420px;
+    max-width: 380px;
   }
 
   .gsr-footer-cta-actions {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
+    align-items: flex-start;
+    gap: 48px;
   }
 
   .gsr-footer-btn {
@@ -87,11 +93,31 @@
     border-radius: 999px;
     white-space: nowrap;
     transition: background 0.2s ease, transform 0.2s ease;
+    margin-top: 4px;
   }
   .gsr-footer-btn svg { width: 16px; height: 16px; }
   .gsr-footer-btn:hover {
     background: #EAF0FF;
     transform: translateY(-2px);
+  }
+
+  .gsr-footer-subscribe-block {
+    max-width: 300px;
+  }
+
+  .gsr-footer-subscribe-heading {
+    margin: 0 0 6px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+
+  .gsr-footer-subscribe-subtext {
+    margin: 0 0 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .gsr-footer-subscribe {
@@ -109,7 +135,8 @@
     color: #ffffff;
     font-size: 15px;
     padding: 10px 16px;
-    min-width: 180px;
+    min-width: 140px;
+    width: 100%;
     outline: none;
   }
   .gsr-footer-subscribe input::placeholder { color: rgba(255, 255, 255, 0.65); }
@@ -118,7 +145,7 @@
     align-items: center;
     gap: 8px;
     padding: 12px 22px;
-    background: #6EE787;
+    background: #ffffff;
     color: #021B55;
     font-size: 14.5px;
     font-weight: 700;
@@ -130,16 +157,16 @@
   }
   .gsr-footer-subscribe button svg { width: 15px; height: 15px; }
   .gsr-footer-subscribe button:hover {
-    background: #8CF29E;
+    background: #EAF0FF;
     transform: translateY(-2px);
   }
 
   @media (max-width: 720px) {
     .gsr-footer-cta-content { padding: 40px 24px; flex-direction: column; align-items: flex-start; }
     .gsr-footer-cta-heading { font-size: 24px; max-width: 100%; }
-    .gsr-footer-cta-actions { flex-direction: column; align-items: stretch; width: 100%; }
-    .gsr-footer-btn, .gsr-footer-subscribe { justify-content: center; }
-    .gsr-footer-subscribe input { min-width: 0; flex: 1; }
+    .gsr-footer-cta-actions { flex-direction: column; align-items: stretch; width: 100%; gap: 28px; }
+    .gsr-footer-subscribe-block { max-width: 100%; }
+    .gsr-footer-subscribe input { min-width: 0; }
   }
 </style>
 </body></html>
